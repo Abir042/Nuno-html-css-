@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css?family=Sniglet&display=swap');
+
+body{
+  overflow-x: hidden;
+  font-family: 'Sniglet', cursive;
+  color: #505962;
+}
+
+.offset::before {
+  display: block;
+  content: "";
+  height: 4rem;
+  margin-top: -4rem;
+}
+
+/* Navigation Bar */
+.navbar {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: .9rem;
+  letter-spacing: .1rem;
+  background: rgba(0, 0, 0, 0.4) !important;
+}
+
+.navbar-brand > img {
+  height: 2rem;
+}
+
+.navbar-nav > li {
+  padding-right: .7rem;
+}
+
+.navbar-dark .navbar-nav .nav-link{
+  color: white;
+  padding-top: .8rem;
+}
+
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #1ebba3 !important ;
+}
+/* Navigation Bar ennds here */
+
+/* Landing Page Section */
+.home-inner {
+  background: url(./img/computers.png);
+}
+
+.caption {
+  width: 100%;
+  max-width: 100%;
+  position: absolute ;
+  top: 47%;
+  z-index: 1;
+  color: wheat;
+  text-transform: uppercase;
+}
+
+.caption > h1 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  letter-spacing: .2rem;
+  text-shadow: .1rem .1rem .8rem black;
+  padding-bottom: 1rem;
+}
+
+.caption > h6 {
+  font-size: 2rem;
+  text-shadow: .1rem .1rem .5rem black;
+  padding-bottom: 1.6rem;
+}
+
+.caption >.btn-lg {
+  border-width: medium;
+  border-radius: 0;
+  padding: .6rem 1.3rem;
+  font-size: 1.1rem;
+}
+
+/* End of Landing Page */
+.narrow {
+  width: 75%;
+  margin: 1.5rem auto;
+  padding-top: 2rem;
+}
+
+.narrow > h2 {
+  font-size: 2.4rem;
+}
+
+.btn-secondary {
+  border-width: medium;
+  border-radius: 0;
+  text-transform: uppercase;
+  font-size: 1rem;
+  padding: .4rem 1rem;
+  margin: 1rem;
+  color: white;
+  background-color: #1ebba3;
+  border-color: #1ebba3;
+}
+
+.btn-secondary:hover {
+  background-color: #189582;
+  border-color: #189582;
+}
+
+.clients-img {
+  border-radius: 58%;
+}
+
+/* End of Course section */
+
+/* Features section */
+
+.jumbotron {
+  margin-bottom: 0;
+  padding: 2rem 0 3.5rem;
+  border-radius: 0;
+}
+
+h3.heading {
+  font-size: 2.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+
+.heading-underline {
+  width: 16.8rem;
+  height: .2rem;
+  margin: 0 auto 1.2rem;
+  background-color: cyan;
+}
+
+.feature svg.svg-inline--fa {
+  color: #1ebba3;
+}
+
+/* Start of Resources section */
+
+.fixed {
+  background: url(./img/apple.png);
+  z-index: 1;
+}
+
+.dark {
+  background: rgba(0, 0, 0, 0.75);
+  color: white;
+  padding: 6rem 0;
+}
+
+/* Start of Contact section */
+
+#contact {
+  color: white;
+}
+
+.contact-item > img {
+  margin-bottom:1.5rem;
+}
+
+/* Owl Carousel */
+
+/* .owl-prev, .owl-next {
+  position: absolute;
+}
+
+.owl-prev {
+  left: -1.4rem;
+}
+
+.owl-next {
+  right: -1.4rem;
+} */
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+  .clients-img {
+    border-radius: 58%;
+    height: 5rem;
+    width: 5rem !important;
+    margin: 0 auto;
+  }
+}
+
+/*============ BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+=============*/
